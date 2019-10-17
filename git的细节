@@ -1,0 +1,29 @@
+git   x86_64   1.8.3.1-6.el7_2.1     rhel-dvd    4.4 M
+# 默认安装了旧版本的，所以应该先卸载
+yum remove git -y
+# 默认没有安装的包
+yum install asciidoc docbook2x getopt -y
+# 相关参考
+No package asciidoc available.
+Package xmlto-0.0.25-7.el7.x86_64 already installed and latest version
+No package docbook2x available.
+  * Maybe you meant: docbook2X
+No package getopt available.
+# asciidoc的安装
+# wget  ftp5.gwdg.de/pub/opensuse/repositories/home:/rexut:/RHEL7-missing-deps/CentOS_7/noarch/asciidoc-doc-8.6.8-5.el7.noarch.rpm
+# wget ftp://ftp.pbone.net/mirror/ftp5.gwdg.de/pub/opensuse/repositories/home:/rexut:/RHEL7-missing-deps/CentOS_7/noarch/asciidoc-doc-8.6.8-5.el7.noarch.rpm
+# 参考http://rpm.pbone.net/index.php3/stat/4/idpl/26640260/dir/centos_7/com/asciidoc-doc-8.6.8-5.el7.noarch.rpm.html
+# 说明:主要是更新JDK，把原来的删除了，jdk删除有风险(jdk)
+** Found 2 pre-existing rpmdb problem(s), 'yum check' output follows:
+icedtea-web-1.6.2-4.el7.x86_64 has missing requires of java-1.8.0-openjdk
+jline-1.0-8.el7.noarch has missing requires of java >= ('0', '1.5', None)
+
+# 保存参考
+# https://www.cnblogs.com/betx/p/6559127.html
+# https://www.cnblogs.com/grimm/p/5368777.html
+# 帮助文档-->路径
+ vim /etc/man_db.conf
+
+############git和github关联#############
+#
+#https://www.cnblogs.com/flora5/p/7152556.html

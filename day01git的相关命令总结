@@ -1,0 +1,23 @@
+#(1)git的配置-->再家目录中，--system是在全局，不加参数是在当前.git
+  810  git config --global user.name "jianzhiwang"
+  811  git config --global user.email "1125246519@qq.com"
+  816  git config --global merge.tool vimdiff
+  817  git config --list
+
+#(2)验证
+  901  ssh -T git@github.com
+
+#(3)关联远程仓库
+  924  git init 
+  925  git add Git.sh git的细节 
+  926  git commit -m "第一次提交"
+# 关联
+  928  git remote add origin git@github.com:jianzhiwang/git_relation.git
+  929  git push -u origin master
+
+# 继续提交
+  935  git add git的错误汇总.docx 
+  937  git commit -m "第二次提交-添加错误文档"
+# 不加参数u提交最新的
+  938  git push  origin master
+

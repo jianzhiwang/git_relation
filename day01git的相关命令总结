@@ -21,3 +21,6 @@
 # 不加参数u提交最新的
   938  git push  origin master
 
+
+# 编辑git的配置文件
+git config -e

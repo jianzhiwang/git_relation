@@ -1,7 +1,7 @@
 #!/bin/bash
-#######################
+########################
 ##### git的源码编译-->root用户的身份
-#######################
+########################
 #(1)解决git源码编译的问题
 #yum install -y curl-devel expat-devel gettext-devel openssl-devel zlib-devel perl-ExtUtils-CBuilder perl-ExtUtils-MakeMaker
 yum install -y curl-devel expat-devel gettext-devel openssl-devel perl-devel zlib-devel asciidoc xmlto docbook2X xz autoconf 
